@@ -134,29 +134,35 @@ nav ul li a:hover {
 margin-bottom: 20px;
 }
 
-.menu-items{
+.menu-items {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between; /* Kartlar arasında boşluk */
+  gap: 20px; /* Kartlar arası boşluk için */
 }
-
 
 .menu-item {
-  width: calc(33.333% - 20px);
+  flex:  calc(33.333% - 20px); /* 3 kart yan yana ve boşluklar hesaba katılıyor */
   background-color: #fff;
+  padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  
-  
 
+  display: flex;
+  flex-direction: column; /* Dikey hizalama */
+  align-items: center;
+  text-align: center;
 }
 
-.menu-item img{
-  width: 100%;
+.menu-item img {
+  width: 40%;
   height: auto;
   border-radius: 5px;
+  margin-bottom: 10px;
   object-fit: cover;
-  margin-bottom: 110px;
+}
+
+.order-button {
+  margin-top: 10px;
+  align-self: center;
 }
